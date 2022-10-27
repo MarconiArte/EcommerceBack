@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0; }
@@ -6,5 +7,89 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; }
 
+p {
+  font-size: 1.8rem; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    color: #FFFFFF; }
+
+img {
+  width: 100%; }
+
+body {
+  background-color: #1b263b;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif; }
+
 h1 {
-  color: red; }
+  font-size: 3rem; }
+
+h2 {
+  font-size: 2rem; }
+
+h3 {
+  font-size: 1.5rem; }
+
+.iconos {
+  width: 30px; }
+
+.hidden {
+  display: none; }
+
+.nav-1 {
+  background-color: #0D1B2A;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 2rem 2rem; }
+  .nav-1 a {
+    color: #FFFFFF;
+    font-size: 3rem;
+    text-transform: uppercase; }
+  .nav-1 .nav-ico {
+    display: flex;
+    gap: 1rem; }
+    .nav-1 .nav-ico p {
+      color: #FFFFFF; }
+    .nav-1 .nav-ico button {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.80rem;
+      width: 3rem;
+      height: 3rem;
+      border: none;
+      background: transparent;
+      align-items: center; }
+      .nav-1 .nav-ico button div {
+        background-color: #FFFFFF;
+        height: 0.2rem;
+        width: 100%;
+        border-radius: 0.5rem;
+        transition: all 0.5s;
+        transform-origin: left; }
+      .nav-1 .nav-ico button:hover div:first-child {
+        transform: rotate(45deg); }
+      .nav-1 .nav-ico button:hover div:nth-child(2) {
+        opacity: 0; }
+      .nav-1 .nav-ico button:hover div:last-child {
+        transform: rotate(-45deg); }
+
+.nav-2 {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #415A77;
+  padding: 2rem; }
+  .nav-2 a {
+    color: #FFFFFF;
+    font-size: 2rem; }
+    @media (max-width: 768px) {
+      .nav-2 a {
+        padding: 0.5rem; } }
+  @media (max-width: 768px) {
+    .nav-2 {
+      flex-direction: column;
+      text-align: center; } }
