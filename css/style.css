@@ -36,19 +36,20 @@ h3 {
 .iconos {
   width: 30px; }
 
-.hidden {
-  display: none; }
-
 .nav-1 {
   background-color: #0D1B2A;
   justify-content: space-between;
   display: flex;
   align-items: center;
   padding: 2rem 2rem; }
-  .nav-1 a {
-    color: #FFFFFF;
+  .nav-1 .nav-logo {
     font-size: 3rem;
     text-transform: uppercase; }
+    .nav-1 .nav-logo a {
+      color: #FFFFFF; }
+      @media (max-width: 768px) {
+        .nav-1 .nav-logo a .ack {
+          display: none; } }
   .nav-1 .nav-ico {
     display: flex;
     gap: 1rem; }
@@ -71,6 +72,9 @@ h3 {
         border-radius: 0.5rem;
         transition: all 0.5s;
         transform-origin: left; }
+        @media (min-width: 768px) {
+          .nav-1 .nav-ico button div {
+            display: none; } }
       .nav-1 .nav-ico button:hover div:first-child {
         transform: rotate(45deg); }
       .nav-1 .nav-ico button:hover div:nth-child(2) {
@@ -80,6 +84,8 @@ h3 {
 
 .nav-2 {
   display: flex;
+  flex-direction: row;
+  text-align: center;
   justify-content: space-evenly;
   background-color: #415A77;
   padding: 2rem; }
@@ -93,3 +99,6 @@ h3 {
     .nav-2 {
       flex-direction: column;
       text-align: center; } }
+
+.hidden {
+  display: none; }

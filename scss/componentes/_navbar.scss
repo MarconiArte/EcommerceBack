@@ -1,10 +1,21 @@
 .nav-1{
+    .nav-logo{
+        font-size: 3rem; 
+        text-transform: uppercase;
+        a  {
+            color: $blanco;
+            .ack{
+                @media (max-width:768px){
+                   display: none;
+                }
+            }
+        }
+    }
     background-color: $primario;
     justify-content: space-between;
     display: flex;
     align-items: center;
     padding: 2rem 2rem;
-    a{color: $blanco; font-size: 3rem; text-transform: uppercase;}
     .nav-ico{
         display: flex;
         p{color: $blanco;}
@@ -27,6 +38,9 @@
                 border-radius: 0.5rem;
                 transition: all 0.5s;
                 transform-origin: left;
+                @media (min-width :768px){
+                    display: none;
+                }
             }
             &:hover div:first-child{
                 transform: rotate(45deg);
@@ -44,6 +58,8 @@
 
 .nav-2{
     display: flex;
+    flex-direction: row;
+    text-align: center;
     justify-content: space-evenly;
     background-color: $secundario;
     padding: 2rem;
@@ -58,4 +74,8 @@
         flex-direction: column;
         text-align: center;
     }
+}
+
+.hidden{
+    display: none;
 }
