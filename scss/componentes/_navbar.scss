@@ -63,16 +63,21 @@
     justify-content: space-evenly;
     background-color: $secundario;
     padding: 2rem;
+    height: 3rem;
     a{
         color: $blanco; 
         font-size: 2rem;
         @media (max-width:768px) {
             padding: 0.5rem;
         }
+        &:hover{
+            border-bottom: solid 1px $blanco;
+        }
     }
     @media (max-width:768px) {
         flex-direction: column;
         text-align: center;
+        height: 20rem;
     }
 }
 

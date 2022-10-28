@@ -1,0 +1,36 @@
+main {
+    .seccion-ropa-hombres{
+        background-color: $blanco;
+        margin-bottom: 1rem;
+        color: $fondo;
+        width: 100%;
+        text-align: center;
+        .seccion-productos{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1rem;
+            margin:3rem;
+            img {width: 60%;}
+
+            .seccion-titulo{
+                text-align: center;
+                padding: 0.5rem;
+                
+            }
+
+            .seccion-producto{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                border:solid 1px $negro;
+                padding: 0.5rem;
+                .titulo-des{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+        
+    }
+}
