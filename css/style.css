@@ -38,6 +38,9 @@ h3 {
 
 .nav-1 {
   background-color: #0D1B2A;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
   justify-content: space-between;
   display: flex;
   align-items: center;
@@ -84,12 +87,15 @@ h3 {
 
 .nav-2 {
   display: flex;
+  position: absolute;
   flex-direction: row;
   text-align: center;
   justify-content: space-evenly;
   background-color: #415A77;
   padding: 2rem;
-  height: 3rem; }
+  height: 3rem;
+  margin-top: 8rem;
+  width: 100%; }
   .nav-2 a {
     color: #FFFFFF;
     font-size: 2rem; }
@@ -101,8 +107,13 @@ h3 {
   @media (max-width: 768px) {
     .nav-2 {
       flex-direction: column;
+      position: fixed;
       text-align: center;
-      height: 20rem; } }
+      height: 100%;
+      width: 20rem;
+      justify-content: start;
+      gap: 5rem;
+      margin-top: 8rem; } }
 
 .hidden {
   display: none; }
