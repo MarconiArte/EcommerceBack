@@ -20,9 +20,7 @@ html {
     font-size: 62.5%;
 }
 
-p {
-    font-size: 1.8rem;
-}
+p {font-size: 1.8rem;}
 
 a {
     text-decoration: none;
@@ -31,7 +29,7 @@ a {
     }
 }
 
-img {width: 100%;}
+img { width: 100%; }
 
 body {
     background-color: $fondo;
@@ -44,6 +42,22 @@ h1 { font-size: 3rem; }
 h2 { font-size: 2rem; }
 h3 { font-size: 1.5rem; }
 
-.iconos {
-    width: 30px;
-}
+.iconos { width: 30px; }
+
+/*---------------SVG----------------*/
+
+.svg-icon {
+    width: 2em;
+    height: 2em;
+  }
+  
+  .svg-icon path,
+  .svg-icon polygon,
+  .svg-icon rect {
+    fill: $blanco;
+  }
+  
+  .svg-icon circle {
+    stroke: $blanco;
+    stroke-width: 1;
+  }

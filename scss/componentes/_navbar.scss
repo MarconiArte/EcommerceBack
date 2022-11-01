@@ -12,9 +12,6 @@
         }
     }
     background-color: $primario;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
     justify-content: space-between;
     display: flex;
     align-items: center;
@@ -61,15 +58,12 @@
 
 .nav-2{
     display: flex;
-    position: absolute;
     flex-direction: row;
     text-align: center;
     justify-content: space-evenly;
     background-color: $secundario;
     padding: 2rem;
     height: 3rem;
-    margin-top: 8rem;
-    width: 100%;
     a{
         color: $blanco; 
         font-size: 2rem;
@@ -82,13 +76,9 @@
     }
     @media (max-width:768px) {
         flex-direction: column;
-        position: fixed;
         text-align: center;
         height: 100%;
         width: 20rem;
-        justify-content: start;
-        gap:5rem;
-        margin-top: 8rem;
     }
 }
 
