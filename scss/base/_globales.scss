@@ -5,6 +5,7 @@ $tercero:#778DA9;
 $cuarto:#E0E1DD;
 $blanco:#FFFFFF;
 $negro:#000;
+$gris:rgb(134, 134, 134);
 $fondo:#1b263b;
 
 $fuentePoppins:'Poppins', sans-serif;
@@ -44,6 +45,9 @@ h3 { font-size: 1.5rem; }
 
 .iconos { width: 30px; }
 
+.hidden {
+    display: none;
+}
 /*---------------SVG----------------*/
 
 .svg-icon {

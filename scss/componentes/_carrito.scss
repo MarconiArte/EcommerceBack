@@ -1,0 +1,32 @@
+.cart-contenedor{
+    position: absolute;
+    background-color: rgba($color: #ffffff, $alpha: 0.7);
+    right: 11rem;
+    top: 6rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    z-index: 1;
+    
+    .cart-productos{
+        display: flex;
+        text-align: center;
+        padding: 1rem;
+        gap: 2rem;
+        .cart-imagen{
+            img {
+                width: 100px;
+            }
+            p {font-size: 1rem;}
+        }
+        .cart-nombre{
+            p{font-size: 1rem;}
+        }
+        .cart-precio{
+            p{font-size: 1rem;}
+        }
+        .cart-cantidad{
+            p{font-size: 1rem;}
+            }
+    }
+}
+
