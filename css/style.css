@@ -19,7 +19,7 @@ img {
   width: 100%; }
 
 body {
-  background-color: #1b263b;
+  background-color: #FFFFFF;
   font-size: 1.6rem;
   line-height: 1.5;
   font-family: "Poppins", sans-serif; }
@@ -141,7 +141,8 @@ h3 {
   color: #FFFFFF;
   padding: 1rem;
   border: none;
-  border-radius: 0.5rem; }
+  border-radius: 0.5rem;
+  margin: 1rem; }
 
 .btn-carrito {
   background-color: transparent;
@@ -151,42 +152,91 @@ h3 {
 
 .seccion-ropa-hombres {
   background-color: #FFFFFF;
-  margin-bottom: 1rem;
   color: #000;
   width: 100%;
   text-align: center; }
+  .seccion-ropa-hombres .seccion-titulo {
+    text-align: center;
+    padding: 1rem; }
   .seccion-ropa-hombres .seccion-productos {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     gap: 1rem;
     padding: 1rem;
-    margin: 3rem; }
+    margin: 2rem 2rem 0 2rem; }
     .seccion-ropa-hombres .seccion-productos img {
       width: 100%; }
-    .seccion-ropa-hombres .seccion-productos .seccion-titulo {
-      text-align: center;
-      padding: 0.5rem; }
     .seccion-ropa-hombres .seccion-productos .seccion-producto {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(1, 1fr);
       column-gap: 2rem;
       gap: 2rem; }
+      @media (min-width: 768px) {
+        .seccion-ropa-hombres .seccion-productos .seccion-producto {
+          grid-template-columns: repeat(3, 1fr); } }
       .seccion-ropa-hombres .seccion-productos .seccion-producto .producto {
         background-color: #FFFFFF;
         display: flex;
         flex-direction: column;
         text-align: center;
         box-shadow: 0 1px 2rem #868686; }
+        .seccion-ropa-hombres .seccion-productos .seccion-producto .producto figure {
+          overflow: hidden; }
+          .seccion-ropa-hombres .seccion-productos .seccion-producto .producto figure img {
+            transition: all .5s; }
+        .seccion-ropa-hombres .seccion-productos .seccion-producto .producto:hover img {
+          transform: scale(1.2); }
         .seccion-ropa-hombres .seccion-productos .seccion-producto .producto .producto-descripcion {
           padding: 0.5rem; }
+          .seccion-ropa-hombres .seccion-productos .seccion-producto .producto .producto-descripcion h2 {
+            padding: 0.5rem; }
+          .seccion-ropa-hombres .seccion-productos .seccion-producto .producto .producto-descripcion p {
+            padding: 0.5rem; }
 
 .seccion-ropa-mujeres {
-  background-image: url(../../img/fondowoman.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 100%; }
+  background-color: #FFFFFF; }
+  .seccion-ropa-mujeres .seccion-titulo {
+    background-color: #d951ae;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1rem 0; }
+  .seccion-ropa-mujeres .seccion-productos-mujeres {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    margin: 2rem 2rem 0 2rem; }
+    @media (max-width: 768px) {
+      .seccion-ropa-mujeres .seccion-productos-mujeres {
+        flex-direction: column; } }
+    .seccion-ropa-mujeres .seccion-productos-mujeres .producto-mujeres {
+      background-image: url(../../img/1-m.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 50rem;
+      height: 50rem;
+      border-radius: 2rem; }
+      .seccion-ropa-mujeres .seccion-productos-mujeres .producto-mujeres .producto-descripcion-mujeres {
+        height: 100%;
+        border-radius: 2rem; }
+        .seccion-ropa-mujeres .seccion-productos-mujeres .producto-mujeres .producto-descripcion-mujeres:hover {
+          background-color: rgba(217, 81, 174, 0.5); }
+    .seccion-ropa-mujeres .seccion-productos-mujeres .portada-mujeres {
+      background-image: url(https://images.pexels.com/photos/9892919/pexels-photo-9892919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      border-radius: 0.5rem;
+      overflow: hidden; }
+      .seccion-ropa-mujeres .seccion-productos-mujeres .portada-mujeres .portada-contenido {
+        background-color: rgba(217, 81, 174, 0.4);
+        color: #FFFFFF;
+        padding: 1rem;
+        text-align: center;
+        height: 100%; }
+        .seccion-ropa-mujeres .seccion-productos-mujeres .portada-mujeres .portada-contenido h2 {
+          font-size: 3rem; }
+        .seccion-ropa-mujeres .seccion-productos-mujeres .portada-mujeres .portada-contenido h3 {
+          font-size: 2rem; }
 
 .cart-contenedor {
   position: absolute;

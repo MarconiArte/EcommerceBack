@@ -1,38 +1,45 @@
 .seccion-ropa-hombres{
     background-color: $blanco;
-    margin-bottom: 1rem;
     color: $negro;
     width: 100%;
     text-align: center;
+    .seccion-titulo{
+        text-align: center;
+        padding: 1rem;
+    }
     .seccion-productos{
-        display: flex;
-        flex-direction: column;
         justify-content: center;
         gap: 1rem;
         padding: 1rem;
-        margin:3rem;
+        margin:2rem 2rem 0 2rem;
         img {width: 100%;}
 
-        .seccion-titulo{
-            text-align: center;
-            padding: 0.5rem;
-        }
 
         .seccion-producto{
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(1, 1fr);
             column-gap: 2rem;
             gap: 2rem;
-
+            @media (min-width:768px) {
+                grid-template-columns: repeat(3, 1fr);
+            }
             .producto{
                 background-color: $blanco;
                 display: flex;
                 flex-direction: column;
                 text-align: center;
                 box-shadow:0 1px 2rem $gris;
-
+                figure {
+                    overflow: hidden;
+                    img{transition: all .5s;}
+                }
+                &:hover img {
+                    transform: scale(1.2);
+                }
                 .producto-descripcion{
                     padding: 0.5rem;
+                    h2 {padding: 0.5rem;}
+                    p {padding: 0.5rem;}
                 }
             }
     }

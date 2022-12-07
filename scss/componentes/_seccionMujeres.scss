@@ -1,8 +1,55 @@
 .seccion-ropa-mujeres{
-    background-image: url(../../img/fondowoman.jpg);
-    background-size: cover;
-    background-repeat:no-repeat;
-    background-position: center center;
-    height: 100%;
-    
+    background-color:$blanco;
+    .seccion-titulo{
+        background-color: $rosa;
+        color: $blanco;
+        text-align: center;
+        padding: 1rem 0;
+    }
+    .seccion-productos-mujeres{
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+        margin:2rem 2rem 0 2rem;
+        @media (max-width:768px){
+            flex-direction: column;
+        }
+
+        .producto-mujeres{
+            background-image: url(../../img/1-m.png);
+            background-size: cover;
+            background-repeat:no-repeat;
+            background-position: center center;
+            width: 50rem;
+            height: 50rem;
+            border-radius: 2rem;
+            .producto-descripcion-mujeres{
+                height: 100%;
+                border-radius:2rem ;
+                &:hover{
+                    background-color: rgba($color: $rosa, $alpha: 0.5);
+                }
+            }
+        }
+        
+        .portada-mujeres{
+            background-image: url(https://images.pexels.com/photos/9892919/pexels-photo-9892919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+            background-size: cover;
+            background-repeat:no-repeat;
+            background-position: center center;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            .portada-contenido{
+                background-color: rgba($color: $rosa, $alpha: 0.4);
+                color: $blanco;
+                padding: 1rem;
+                text-align: center;
+                height: 100%;
+                h2 {font-size: 3rem;}
+                h3 {font-size: 2rem;}
+                
+            }
+        }
+    }
+
 }

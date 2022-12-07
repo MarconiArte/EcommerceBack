@@ -7,6 +7,7 @@ $blanco:#FFFFFF;
 $negro:#000;
 $gris:rgb(134, 134, 134);
 $fondo:#1b263b;
+$rosa:rgb(217, 81, 174);
 
 $fuentePoppins:'Poppins', sans-serif;
 
@@ -33,7 +34,7 @@ a {
 img { width: 100%; }
 
 body {
-    background-color: $fondo;
+    background-color: $blanco;
     font-size: 1.6rem;
     line-height: 1.5;
     font-family: $fuentePoppins;
